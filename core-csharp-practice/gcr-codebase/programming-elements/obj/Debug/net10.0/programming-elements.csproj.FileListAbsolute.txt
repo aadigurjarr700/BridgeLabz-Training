@@ -1,0 +1,15 @@
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/bin/Debug/net10.0/programming-elements
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/bin/Debug/net10.0/programming-elements.deps.json
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/bin/Debug/net10.0/programming-elements.runtimeconfig.json
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/bin/Debug/net10.0/programming-elements.dll
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/bin/Debug/net10.0/programming-elements.pdb
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.AssemblyInfoInputs.cache
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.AssemblyInfo.cs
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.csproj.CoreCompileInputs.cache
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.sourcelink.json
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.dll
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/refint/programming-elements.dll
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.pdb
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/programming-elements.genruntimeconfig.cache
+/Users/adityagurjar/Desktop/BridgeLabz-Training/core-csharp-practice/gcr-codebase/programming-elements/obj/Debug/net10.0/ref/programming-elements.dll
