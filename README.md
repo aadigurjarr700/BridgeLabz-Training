@@ -184,4 +184,57 @@ This repository is focused on:
 - Prepare for professional software development environments  
 - Apply learned C# concepts to solve real-world problems efficie
 
+======================================================================================================================================
+📅 22nd December
+
+💻 Core C# – Control Flow Statements
+
+Practiced control flow concepts in C# by solving structured programs and organizing them into Level 1, Level 2, and Level 3 folders for better learning progression.
+
+✅ Level 1 (Basic Control Flow)
+
+Solved Level 1 programs focused on understanding basic decision-making, including:
+
+if and if-else statements
+
+Checking conditions (even/odd, positive/negative, greater/smaller)
+
+Using relational and logical operators
+
+Building a strong foundation in conditional logic
+
+✅ Level 2 (Intermediate Control Flow)
+
+Solved Level 2 programs focused on improving problem-solving skills, including:
+
+else if ladder programs
+
+switch case based logic
+
+Leap year validation
+
+Grade and result calculation programs
+
+Writing clean and readable conditional structures
+
+✅ Level 3 (Advanced Control Flow)
+
+Solved Level 3 programs focused on complex decision-making, including:
+
+Nested if-else conditions
+
+Multiple condition handling
+
+Real-world scenario-based logic problems
+
+Improving code structure and readability
+
+🎯 Key Learning Outcome
+
+Gained confidence in writing decision-based programs
+
+Improved logical thinking and flow control
+
+
+
 
