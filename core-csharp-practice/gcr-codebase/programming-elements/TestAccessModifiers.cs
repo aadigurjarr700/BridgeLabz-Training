@@ -32,7 +32,7 @@ class Dog:Animal
 }
 
 //Main class
-class AccessModifiers
+class TestAccessModifiers
 {
     static void Main()
     {
