@@ -237,4 +237,21 @@ Improved logical thinking and flow control
 
 
 
+==========================================================================================================================================
+📅 23rd December
+
+💻 Core C# – Arrays
+
+Practiced array-based programming in C# by solving Level 1 and Level 2 problems focused on taking multiple inputs, applying conditional logic on stored values, performing calculations such as sums, averages, percentages, and bonuses, working with numeric data by extracting and analyzing digits, handling dynamic data using arrays, and using both one-dimensional and multi-dimensional arrays to model and process real-world scenarios.
+
+🧠 Problem Solving (LeetCode)
+
+Solved array problems to improve problem-solving skills, accuracy, and coding efficiency.
+
+🎯 Key Learning Outcome
+
+Strengthened understanding of array manipulation Improved logical thinking and data processing skills Gained confidence in handling real-world problems using C#
+
+
+
 
