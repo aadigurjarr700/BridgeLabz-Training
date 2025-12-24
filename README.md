@@ -253,5 +253,45 @@ Solved array problems to improve problem-solving skills, accuracy, and coding ef
 Strengthened understanding of array manipulation Improved logical thinking and data processing skills Gained confidence in handling real-world problems using C#
 
 
+===================================================================================================================================================================
+📅 24th December 2025
+💻 Core C# – Methods & Advanced Programming Concepts
+Focused on user-defined methods, recursive methods, static methods, and .NET standard library usage in C#. Practiced all three levels of assignments emphasizing modular and reusable code design.
+
+✅ Key Work Done
+Practiced and implemented programs covering:
+
+User-Defined Methods – Created custom methods for specific tasks in programs.
+
+Using Methods Multiple Times – Reused methods across different parts of programs to avoid code repetition.
+
+Making Methods More Dynamic – Passed parameters and returned values to make methods flexible.
+
+Recursive Methods – Solved problems like sum of n natural numbers, factorial, and other recursive exercises.
+
+Static Methods in C# – Implemented utility methods that can be called without creating objects, including UnitConverter examples.
+
+.NET Standard Library Methods – Practiced using built-in library methods for strings, arrays, math operations, and more.
+
+System.Math Class in C# – Used Math functions like Math.Pow(), Math.Sqrt(), Math.Round(), and Math.Random() for calculations.
+
+✅ Key Improvements & Learning Outcomes
+Strengthened modular programming skills using methods effectively.
+
+Learned to reuse code and make programs dynamic and flexible.
+
+Practiced recursive problem solving to handle repeated logic elegantly.
+
+Enhanced understanding of static methods and .NET library methods for real-world applications.
+
+Applied System.Math class methods for mathematical and logical operations.
+
+🛠 Tools & Workflow
+Organized programs into Level 1, Level 2, and Level 3 folders for clear progression.
+
+Committed and pushed all updates using Git & GitHub.
+
+Maintained structured daily learning logs for consistent practice.
+
 
 
