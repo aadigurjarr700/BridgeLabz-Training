@@ -295,3 +295,27 @@ Maintained structured daily learning logs for consistent practice.
 
 
 
+================================================================================================================================================================================================================================================
+📅 26th December
+
+💻 Core C# – Strings, Date & Time
+
+Practiced working with string manipulation concepts and Date & Time handling in C#. Focused on understanding commonly used string operations and working with date-related functionalities to handle real-world scenarios effectively.
+
+🧠 Problem Solving
+
+Solved 1 LeetCode problem to strengthen logical thinking and improve problem-solving skills.
+
+Worked on a scenario-based question, applying C# fundamentals to simulate real-life use cases and improve analytical reasoning.
+
+📌 Key Learning Outcomes
+
+Improved understanding of string operations
+
+Gained clarity on Date and Time usage in C#
+
+Enhanced logical and scenario-based problem-solving skills
+
+Continued consistent practice for coding proficiency
+
+
