@@ -318,4 +318,30 @@ Enhanced logical and scenario-based problem-solving skills
 
 Continued consistent practice for coding proficiency
 
+===================================================================================================================================================================================================================
+📅 **Date:** 27 December 2026  
+
+## ✅ Problems Solved
+
+### 1️⃣ Search in Rotated Sorted Array
+- Used Binary Search
+- Time Complexity: **O(log n)**
+- Implemented in **C#**
+
+### 2️⃣ Find First and Last Position of Element in Sorted Array
+- Used modified Binary Search
+- Found first and last occurrence separately
+- Time Complexity: **O(log n)**
+- Implemented in **C#**
+
+## 🛠 Language Used
+- C#
+
+## 📌 Platform
+- LeetCode
+
+## ✨ Summary
+Solved two important binary search problems to strengthen problem-solving skills and understanding of array searching techniques.
+
+
 
