@@ -343,5 +343,28 @@ Continued consistent practice for coding proficiency
 ## ✨ Summary
 Solved two important binary search problems to strengthen problem-solving skills and understanding of array searching techniques.
 
+==============================================================================================================================================================================================================
+📅 **Date:** 28 December 2025
+
+## ✅ Problems Solved
+
+### 1️⃣ Search Insert Position
+- Applied Binary Search
+- Time Complexity: **O(log n)**
+- Language: **C#**
+
+### 2️⃣ Trapping Rain Water
+- Used Two Pointer technique
+- Optimized space usage
+- Time Complexity: **O(n)**
+- Language: **C#**
+
+## 🛠 Platform
+- LeetCode
+
+## ✨ Notes
+Practiced array and binary search based problems to improve logic building and problem-solving skills.
+
+
 
 
