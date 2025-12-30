@@ -367,6 +367,7 @@ Practiced array and binary search based problems to improve logic building and p
 
 
 ===========================================================================================================================================================================================================================================================================================
+
 🗓️ 29th December 2025
 
 Arrays – Temperature Analyzer
@@ -407,27 +408,32 @@ Maximum Subarray
 
 
 ==========================================================================================================================================================================================================================================================================================================================================
-📅 Date: 30 December 2025
+📅 Date: 30 December  2025
 📌 Overview
 This repository contains C# console-based practice programs focusing on arrays, string operations, methods, and menu-driven logic for beginner-level learning.
+
 🏫 Library Management System
+
 Menu-driven system with Admin and User roles
 Admin can add, remove, update, and initialize books
 Users can display books, search by partial title, and checkout books
 Implemented using arrays only (no database)
+
 📝 EduQuiz – Student Quiz Grader
+
 Compares student answers with correct answers using arrays
 Case-insensitive answer checking
 Displays Correct / Incorrect feedback
 Calculates score, percentage, and Pass/Fail result
+
 🧠 LeetCode Problems Solved
 Sort Colors (Dutch National Flag Algorithm)
 Plus One (Array digit manipulation)
+
 🛠️ Technologies Used
 Language: C#
 Platform: .NET Console
 Tools: VS Code, Git, GitHub
-
 
 
 
