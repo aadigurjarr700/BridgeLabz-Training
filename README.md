@@ -436,5 +436,48 @@ Platform: .NET Console
 Tools: VS Code, Git, GitHub
 
 
+===========================================================================================================================================================================================================================================================================================
+📅 Date: 31 December 2025
+
+✅ Today’s Work Overview
+Today I worked on scenario-based problems, OOPS concepts, and C# constructors, along with one LeetCode problem. All implementations were pushed to their respective branches as mentioned below.
+
+🧩 Scenario-Based Programs
+Implemented three real-world scenario programs using OOPS concepts, methods, and user input:
+🔹 Bank Account Manager
+Deposit, Withdraw, and Check Balance operations
+Admin and User menu-driven system
+Overdraft prevention logic
+🔹 Bill / Invoice Generator
+Parsed bill input using string operations
+Extracted item names and prices
+Calculated total bill amount
+🔹 Math Functions
+Performed mathematical operations using methods
+Clean, reusable, and user-friendly logic
+📌 Branch: oops-csharp-practice
+
+🏗️ C# Constructors Practice
+Completed 13 questions on C# Constructors
+Topics covered:
+Default constructors
+Parameterized constructors
+Constructor chaining
+Copy constructors
+Implemented using simple and easy-to-understand code
+📌 Branch: oops-csharp-practice
+
+🧠 LeetCode Practice
+Solved 1 LeetCode problem
+Focused on array manipulation and logic building
+Converted solution into proper C# syntax
+📌 Branch: core-csharp-practice
+
+🛠️ Technologies Used
+Language: C#
+Platform: .NET Console
+Concepts: OOPS, Constructors, Arrays, Strings, Methods
+Tools: VS Code, Git, GitHub
+
 
 
