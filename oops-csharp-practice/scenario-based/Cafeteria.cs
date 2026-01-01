@@ -1,3 +1,9 @@
+/*SUMMARY
+We are building a simple cafeteria menu system using arrays and methods.
+A string[] array is used to store the fixed list of menu items.
+The menu is displayed with index numbers, allowing users to select items easily.
+Methods like DisplayMenu() and GetItemByIndex() are used to organize the code and fetch user-selected items, 
+making the program clear and reusable.*/
 using System;
 
 class Cafeteria
