@@ -632,7 +632,16 @@ The following systems were designed and implemented:
 8.Ride-Hailing Application
 📌Branch:oops-csharp-practice
 
-### 🧩 LeetCode Practice 
+### 🧩LeetCode Practice 
 Peak Index in Mountain Array
 This solution is implemented in C# and pushed to the
 📌Branch:core-csharp-practice 
+
+
+### 🧩Scenario-Based Problems
+🔹 1. Customer Service Call Log Manager
+Scenario:
+A telecom company needs to track and manage customer call logs efficiently.
+🔹 2. Bird Sanctuary Management System
+Scenario:
+EcoWing Wildlife Conservation Center needs to track different types of birds using Inheritance and Polymorphism.
