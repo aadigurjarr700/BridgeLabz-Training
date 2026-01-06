@@ -604,3 +604,35 @@ Interface: IRentable with CalculateRent(int days)
 
 ### Additional LeetCode Practice
 Palindrome Number
+
+
+========================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+### 📅 Date: 06 January 2026
+
+### 📘C# OOP Practice
+This repository contains my Object-Oriented Programming (OOP) practice work in C#, completed as part of my learning and thesis-style implementation.
+
+### 🧠Concepts Covered
+The following OOP concepts are strongly implemented across all problems:
+*Encapsulation (private fields with properties)
+*Abstraction (abstract classes & interfaces)
+*Inheritance
+*Polymorphism
+
+### Question Done
+The following systems were designed and implemented:
+1.Employee Management System
+2.E-Commerce Platform
+3.Vehicle Rental System
+4.Banking System
+5.Library Management System
+6.Online Food Delivery System
+7.Hospital Patient Management System
+8.Ride-Hailing Application
+📌Branch:oops-csharp-practice
+
+### 🧩 LeetCode Practice 
+Peak Index in Mountain Array
+This solution is implemented in C# and pushed to the
+📌Branch:core-csharp-practice 
