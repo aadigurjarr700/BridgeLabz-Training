@@ -17,4 +17,6 @@ EmployeeMenu menu = new EmployeeMenu(utility);
 menu.DisplayMenu();
 
 Console.WriteLine("Thank You");
+Console.WriteLine(employee);
+
 }}

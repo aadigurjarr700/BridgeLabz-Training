@@ -8,7 +8,7 @@ public class EmployeeUtilityImpl:IEmployee
     private const int MaxWorkingDays = 20;
     private const int MaxWorkingHours = 100;
 
-    private Employee employee;
+    private Employee employee; 
     private Random random = new Random();
     public EmployeeUtilityImpl(Employee employee)
     {

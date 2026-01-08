@@ -15,6 +15,11 @@ public class Employee
         EmployeeId = employeeId;
         EmployeeName=empName;
     }
+
+    public override string ToString()
+    {
+        return $"Employee Id: {EmployeeId}, Employee Name: {EmployeeName}, Total Working Days: {TotalWorkingDays}, Total Working Hours: {TotalWorkingHours}, Total Wage: {TotalWage}";
+    }
 }
 
 
