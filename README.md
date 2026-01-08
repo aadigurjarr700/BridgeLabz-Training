@@ -709,7 +709,3 @@ Concepts: Appliance, Light, Fan, AC
 Interface: IControllable (methods: TurnOn(), TurnOff())
 Polymorphism: Each appliance behaves differently when turned on/off, e.g., Light vs AC.
 *pushed in branch: oops-csharp-practice.
-
-✅ Branches
-Data Structures & LeetCode (TOADS problems): datastruct-csharp-practice
-Scenario-Based OOP Question: oops-csharp-practice
