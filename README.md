@@ -681,3 +681,35 @@ UC6: Wage Calculation with Conditions
 Problem: Remove duplicates from a sorted singly linked list
 📂Branch:datastructure-csharp-practice
 
+========================================================================================================================================================================================================================================================================================
+
+### 📅Date=8 January 2026
+
+### 📝Work Done Today
+Today, I focused on C# Data Structures and OOP Concepts, solving multiple problems related to Stacks, Queues, Hashing, and Scenario-based questions.
+
+### Problem Names:
+*Implement a Stack
+*Implement a Queue
+*Sort a Stack using Recursion
+*Queue using Two Stacks
+*Circular Tour Problem
+*Stock Span Problem
+*Sliding Window Maximum
+*Find All Subarrays with Zero Sum
+*Check for a Pair with Given Sum
+*Longest Consecutive Sequence
+
+### LeetCode Problem
+Two Sum problem solved using HashMap (optimized single-pass solution).
+*Pushed in branch: datastructure-csharp-practice.
+
+### Scenario-Based Question: Smart Home Automation System
+Concepts: Appliance, Light, Fan, AC
+Interface: IControllable (methods: TurnOn(), TurnOff())
+Polymorphism: Each appliance behaves differently when turned on/off, e.g., Light vs AC.
+*pushed in branch: oops-csharp-practice.
+
+✅ Branches
+Data Structures & LeetCode (TOADS problems): datastruct-csharp-practice
+Scenario-Based OOP Question: oops-csharp-practice
