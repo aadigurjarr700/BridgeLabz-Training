@@ -749,3 +749,49 @@ Concepts Used: Abstraction, Inheritance, Polymorphism
 *ATM Dispenser Logic(Scenario-Based)
 2.oops-csharp-practice
 *FitTrack – Fitness Tracker (Scenario-Based OOP Design)
+
+
+
+
+============================================================================================================================================================================================================================================================================================
+
+### 📅Date=12 January 2026
+
+### 1️⃣ StringBuilder Problems
+*1.Reverse a String
+*2.Remove Duplicates
+*3.Concatenate Strings Efficiently
+*4.Compare Performance
+
+### 2️⃣ StreamReader Problems
+*1.Read File Line by Line
+*2.Count Word Occurrences
+*3.Convert Byte Stream to Character Stream 
+*4.Read User Input and Write to File
+
+### 3️⃣ Linear Search Problems
+*1.Search for First Negative Number
+*2.Search for a Word in Sentences 
+
+### 4️⃣ Binary Search Problems
+*1.Find Rotation Point
+*2.Find Peak Element
+*3.Search Target in 2D Sorted Matrix 
+*4.First and Last Occurrence 
+
+### 5️⃣ Challenge Problem
+*1.Linear Search: Find the first missing positive integer.
+*2.Binary Search: Find the index of a given target number after sorting the array.
+*3.LeetCode Problem Solved: Binary Search implementation.
+
+### 🔹 LeetCode Problem Solved
+LeetCode 706 – Binary Search
+📌Branch:datastructure-csharp-practice
+
+### 6️⃣ Scenario-Based Summary
+*1.Metal Factory Pipe Cutting
+*2.Custom Furniture Manufacturing
+*3.LoanBuddy – Loan Approval Automation
+📌Branch:oops-csharp-practice
+
+
