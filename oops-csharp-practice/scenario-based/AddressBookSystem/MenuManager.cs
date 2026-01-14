@@ -19,7 +19,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice: ");
 
-                choice = Convert.ToInt32(Console.ReadLine());
+                choice = Convert.ToInt32(Console.ReadLine()); //
 
                 switch (choice)
                 {

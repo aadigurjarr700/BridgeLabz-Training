@@ -4,6 +4,8 @@ using System.Text;
 
 namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
+     
+     //UC1
     internal class Contact
     {
         public string FirstName { get; set; }

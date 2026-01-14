@@ -4,9 +4,10 @@ using System.Text;
 
 namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
-    internal class AddressBook : IAddressBook
+    internal class AddressBook : IAddressBook //
     {
         private Contact contact;
+      // UC2
 
         public void AddContact()
         {
@@ -38,7 +39,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 
             Console.WriteLine("\nContact Added Successfully\n");
         }
-
+       //UC3
         public void EditContact()
         {
             if (contact == null)
@@ -77,6 +78,7 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
                 Console.WriteLine("Contact Not Found\n");
             }
         }
+       // UC4
 
         public void DeleteContact()
         {
