@@ -822,3 +822,21 @@ Remove Nth Node From End of List.
 📌Branch:datastructure-csharp-practice
 
 
+==============================================================================================================================================================================================================================================================================================================================================================================
+
+### 📅 Date 14 January 2026
+
+### 🔹 Scenario-Based Problems
+*1.Address Book System
+UC 1: Create a contact with first name, last name, address, city, state, zip, phone number, and email.
+UC 2: Add a new contact to the address book.
+UC 3: Edit an existing contact using their name.
+UC 4: Delete a contact using their name.
+UC 5: Add multiple contacts to the address book.
+UC 6: Refactor system to add multiple address books, each with a unique name.
+📌Branch:oops-csharp-practice
+
+### 🔹 LeetCode Problem Solve
+1.Linked List Cycle – Detect a cycle in a singly-linked list using Floyd’s Cycle Detection Algorithm.
+📌Branch:datastructure-csharp-practice
+
