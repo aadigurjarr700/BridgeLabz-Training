@@ -6,15 +6,12 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
 {
     internal class AddressBook : IAddressBook
     {
-        // Holds the details of a single contact
         private Contact contact;
 
-        // Method to add a new contact to the address book
         public void AddContact()
         {
-            contact = new Contact(); // Create a new Contact object
+            contact = new Contact();
 
-            // Get contact details from user input
             Console.Write("Enter First Name: ");
             contact.FirstName = Console.ReadLine();
 
@@ -39,7 +36,48 @@ namespace BridgeLabzDup.oops_csharp_practice.scenario_based.address_book_system
             Console.Write("Enter Email: ");
             contact.Email = Console.ReadLine();
 
-            Console.WriteLine("\nContact Added Successfully\n"); // Confirmation message
+            Console.WriteLine("\nContact Added Successfully\n");
+        }
+
+        public void EditContact()
+        {
+            // Check if contact exists
+            if (contact == null)
+            {
+                Console.WriteLine("No contact available to edit\n");
+                return;
+            }
+
+            Console.Write("Enter First Name to Edit Contact: ");
+            string name = Console.ReadLine();
+
+            // Match contact using first name
+            if (contact.FirstName.Equals(name))
+            {
+                Console.Write("Enter New Address: ");
+                contact.Address = Console.ReadLine();
+
+                Console.Write("Enter New City: ");
+                contact.City = Console.ReadLine();
+
+                Console.Write("Enter New State: ");
+                contact.State = Console.ReadLine();
+
+                Console.Write("Enter New Zip: ");
+                contact.Zip = Console.ReadLine();
+
+                Console.Write("Enter New Phone Number: ");
+                contact.PhoneNumber = Console.ReadLine();
+
+                Console.Write("Enter New Email: ");
+                contact.Email = Console.ReadLine();
+
+                Console.WriteLine("\nContact Updated Successfully\n");
+            }
+            else
+            {
+                Console.WriteLine("Contact Not Found\n");
+            }
         }
     }
 }
