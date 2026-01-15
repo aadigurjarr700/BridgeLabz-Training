@@ -840,3 +840,46 @@ UC 6: Refactor system to add multiple address books, each with a unique name.
 1.Linked List Cycle – Detect a cycle in a singly-linked list using Floyd’s Cycle Detection Algorithm.
 📌Branch:datastructure-csharp-practice
 
+
+=============================================================================================================================================================================================================================================================================================================================
+
+### 📅 Date 14 January 2026
+## Address Book System
+**Features Implemented (UC 7 - UC 10):**
+* **UC 7: Duplicate Check**
+  * Prevented adding duplicate persons based on Person Name.
+  * Used collection methods to search for duplicates.
+  * Overridden `Equals` method to detect duplicates.
+* **UC 8: Search Person by City/State**
+  * Enabled searching persons across multiple address books.
+  * Search result can show multiple persons in the specified city or state.
+* **UC 9: View Persons by City/State**
+  * Maintained dictionaries of City -> Persons and State -> Persons.
+  * Used collection library for efficient management.
+* **UC 10: Count by City/State**
+  * Calculated number of contacts grouped by City or State.
+* **C11: Sorting**
+  * Sorted address book entries alphabetically by Person's name.
+  * Overridden `ToString` method for console output of person details.
+  * 📌Branch:oops-csharp-practice
+
+
+
+## BrowserBuddy – Tab History Manager
+**Story:** Neha is building a custom browser with tab history management.
+**Implementation Details:**
+* Used **Doubly Linked List** to maintain browsing history for each tab.
+* Used **Stack** to store recently closed tabs for reopening.
+* Supported **forward and backward navigation**.
+* Ensured memory-efficient tab management using pointers.
+* 📌Branch:oops-csharp-practice
+
+---
+
+## LeetCode Question
+* Solved **Problem 237** on LeetCode.
+* Delete Node in a LinkedList
+* 📌Branch:datastructure-csharp-practice
+
+---
+
