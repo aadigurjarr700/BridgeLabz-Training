@@ -883,3 +883,24 @@ UC 6: Refactor system to add multiple address books, each with a unique name.
 
 ---
 
+==============================================================================================================================================================================================================================================================================================================================
+
+### 📅 Date: 16 January 2026
+
+### 🚦TrafficManager – Roundabout Vehicle Flow
+Features Implemented:
+Managed vehicles using a Circular Linked List.
+Used a Queue for waiting vehicles with overflow/underflow handling.
+Supported dynamic vehicle entry, exit, and traffic status display.
+
+### 📚 BookShelf – Library Organization
+Features Implemented:
+Built a custom dictionary mapping genre to book lists.
+Used Linked List for efficient insert and delete operations.
+Prevented duplicate book entries.
+
+### 💻 LeetCode – Merge Two Sorted Lists
+Features Implemented:
+Merged two sorted linked lists into a single sorted list.
+Applied core Linked List traversal and pointer logic.
+* 📌Branch:datastructure-csharp-practice
