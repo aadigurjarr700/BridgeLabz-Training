@@ -944,3 +944,33 @@ Improved code flexibility using constraints, interfaces, and generic methods
 📌Branch:collections-csharp-practice
 
 
+==============================================================================================================================================================================================================================================================================================================================
+
+
+
+### 📅 Date: 20 January 2026
+
+### Scenario-Based
+#### 🧩 **Backtracking – Password Cracker Simulator**
+Developed a backtracking algorithm to try all possible combinations and unlock a vault.
+Scenario A: Generated all strings of length n.
+Scenario B: Stopped recursion once the password was matched.
+Scenario C: Visualized time and space complexity of the backtracking approach.
+
+#### 📦 **Sorting Aadhar Numbers using Radix Sort**
+Implemented radix sort to efficiently sort 12-digit Aadhar numbers.
+Scenario A: Sorted all Aadhar numbers in ascending order.
+Scenario B: Performed binary search to find a particular number after sorting.
+Scenario C: Maintained order of entries with the same prefix to ensure stability.
+
+#### LeetCode
+ Isomorphic Strings
+ 📌Branch:datastructure-csharp-practice
+
+#### Assignment
+#### 📝 **Collections Submission**
+Submitted assignments demonstrating usage of various C# collections like List, Stack, Queue, and Dictionary.
+📌Branch:collections-csharp-practice
+
+
+
