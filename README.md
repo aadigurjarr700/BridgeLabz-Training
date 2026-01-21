@@ -974,3 +974,26 @@ Submitted assignments demonstrating usage of various C# collections like List, S
 
 
 
+============================================================================================================================================================================================================================================================================================================
+
+### 📅 Date: 21 January 2026
+
+### Scenario-Based
+#### 🎓 EduResults – Rank Sheet Generator (Merge Sort)
+Implemented a rank sheet generator using Merge Sort to merge multiple district-wise sorted student lists into a stable state-level ranking.
+Concepts: Merge Sort, merging sorted lists, stable sorting.
+ 📌Branch:datastructure-csharp-practice
+
+#### 🛒 SmartCheckout – Supermarket Billing Queue (Queue + HashMap)
+Built a checkout system using Queue for customer handling and HashMap for fast item price and stock retrieval.
+Features: Customer queue management, price lookup, stock updates.
+📌Branch:collections-csharp-practice
+
+#### Assignment:
+C# Streams
+📌Branch:collections-csharp-practice
+
+#### LeetCode
+Palindrome Linked List
+ 📌Branch:datastructure-csharp-practice
+
