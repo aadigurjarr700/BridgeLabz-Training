@@ -997,3 +997,47 @@ C# Streams
 Palindrome Linked List
  📌Branch:datastructure-csharp-practice
 
+
+
+
+
+
+
+ ============================================================================================================================================================================================================================================================================================================
+
+### 📅 Date: 22 January 2026
+
+---
+
+## 🚑 Scenario-Based Problem
+### AmbulanceRoute – Emergency Patient Navigation (Circular Linked List)
+**Story:**
+In a hospital, multiple buildings are connected in a circular manner:
+Emergency → Radiology → Surgery → ICU → Emergency
+An ambulance brings patients and navigates through these units to find the nearest available emergency treatment unit.
+📌Branch:collections-csharp-practice
+
+---
+
+##⚠️ Exception Handling – Practice Problems (10)
+### 1️⃣ File Not Found Handling
+### 2️⃣ Division & Input Errors
+### 3️⃣ Custom Exceptions
+### 4️⃣ Multiple Exceptions
+### 5️⃣ Using Statement
+### 6️⃣ Interest Calculation
+### 7️⃣ finally Block Demonstration
+### 8️⃣ Exception Propagation
+### 9️⃣ Nested try-catch
+### 🔟 Bank Transaction System
+📌Branch:collections-csharp-practice
+
+---
+
+## 🧠 LeetCode Problem
+### Continuous Subarray Sum (HashMap + Prefix Sum)
+📌Branch:collections-csharp-practice
+
+
+
+
