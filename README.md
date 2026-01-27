@@ -1040,4 +1040,81 @@ An ambulance brings patients and navigates through these units to find the neare
 
 
 
+================================================================================================================================================================================================================================================================================
+
+### 📅Date:26 January 2026 &&& 📅Date:27 January 2026
+
+## C# Regular Expressions (Regex) Practice Problems
+1. Validate a Username
+2. Validate a License Plate Number
+3. Validate a Hex Color Code
+4. Extract All Email Addresses from a Text
+5. Extract All Capitalized Words from a Sentence
+6. Extract Dates in dd/mm/yyyy Format
+7. Extract Links from a Web Page
+8. Replace Multiple Spaces with a Single Space
+9. Censor Bad Words in a Sentence
+10. Validate an IP Address
+11. Validate a Credit Card Number (Visa, MasterCard, etc.)
+12. Extract Programming Language Names from a Text
+13. Extract Currency Values from a Text
+14. Find Repeating Words in a Sentence
+15. Validate a Social Security Number (SSN)
+
+## C# Unit Testing Practice Problems (NUnit / MSTest)
+1. Basic NUnit Test: Testing a Calculator Class
+2. Testing String Utility Methods
+3. Testing List Operations
+4. Testing Exception Handling
+5. Testing Setup and Teardown (NUnit: [SetUp] & [TearDown])
+6. Testing Parameterized Tests
+7. Performance Testing Using Timeout
+8. Testing File Handling Methods
+## Advanced C# Unit Testing Practice Problems
+1. Testing Banking Transactions
+2. Testing Password Strength Validator
+3. Testing Temperature Converter
+4. Testing Date Formatter
+5. Testing User Registration
+
+## Practice Problems on Reflection in C#
+### Basic Level
+1. Get Class Information
+2. Access Private Field
+3. Invoke Private Method
+4. Dynamically Create Objects
+### Intermediate Level
+1. Dynamic Method Invocation
+2. Retrieve Attributes at Runtime
+3. Access and Modify Static Fields
+### Advanced Level
+1. Create a Custom Object Mapper
+2. Generate a JSON Representation
+3. Custom Logging Proxy Using Reflection
+4. Dependency Injection using Reflection
+5. Method Execution Timing
+
+## Exercise 1: Use Method Overriding Correctly
+## Exercise 2: Use Obsolete Attribute to Mark an Old Method
+## Exercise 3: Suppress Warnings for Unchecked Operations
+## Exercise 4: Create a Custom Attribute and Use It
+## Exercise 5: Create and Use a Repeatable Attribute
+## Practice Problems for Custom Attributes in C#
+### Beginner Level
+1. Create an Attribute to Mark Important Methods
+2. Create a Todo Attribute for Pending Tasks
+### Intermediate Level
+1. Create an Attribute for Logging Method Execution Time
+2. Create a MaxLength Attribute for Field Validation
+### Advanced Level
+1. Implement Role-Based Access Control with RoleAllowed
+2. Implement a Custom Serialization Attribute JsonField
+3. Implement a Custom Caching System with CacheResult
+
+## Scenario-Based Questions
+1. HealthCheckPro – API Metadata Validator
+2. EventTracker – Auto Audit System (Annotations + Reflection + JSON)
+📌Branch:collections-csharp-practice
+
+
 
