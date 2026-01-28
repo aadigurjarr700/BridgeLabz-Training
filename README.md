@@ -1116,5 +1116,18 @@ An ambulance brings patients and navigates through these units to find the neare
 2. EventTracker – Auto Audit System (Annotations + Reflection + JSON)
 📌Branch:collections-csharp-practice
 
+================================================================================================================================================================================================================================================================================
+
+### 📅 Date: 28 January 2026
+
+## Scenario-Based Questions
+1.AeroVigil – Airline Flight Validation System
+2.Bank Account System – Account Management
+📌Branch:collections-csharp-practice
+
+
+### Assignments
+Submission of CSV Data Handling
+📌Branch:ioprogramming-csharp-practice
 
 
