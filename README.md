@@ -1131,3 +1131,14 @@ Submission of CSV Data Handling
 📌Branch:ioprogramming-csharp-practice
 
 
+================================================================================================================================================================================================================================================================================
+
+
+#### 📅 Date: 29 January 2026
+Scenario-Based Projects
+1️⃣ StreamBuzz – Creator Engagement Tracker
+2️⃣ OceanFleet – Vessel Performance Analytics
+📌Branch:collections-csharp-practice
+
+
+
