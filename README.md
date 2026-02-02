@@ -1141,4 +1141,22 @@ Scenario-Based Projects
 📌Branch:collections-csharp-practice
 
 
+===============================================================================================================================================================================================================================================================================================
+
+### 📅 Date:02 February 2026
+
+### 🧩 Scenario 1: Lexical Twist
+Developed a puzzle-based program that processes two words and performs different transformations and analyses based on given conditions.
+🚚 Scenario 2: FutureLogistics
+Built a basic application to automate the billing system, maintaining goods transport records and displaying billing details as required.
+📌Branch:collections-csharp-practice
+
+### 📂 Assignment
+Submission of JSON Data
+📌Branch:ioprogramming-csharp-practice
+
+### 💻 LeetCode
+Reverse Linked List II
+📌Branch:datastructure-csharp-practice
+
 
