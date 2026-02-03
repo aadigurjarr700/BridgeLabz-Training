@@ -1,0 +1,88 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datastructure-csharp-practice", "datastructure-csharp-practice", "{CFD794E8-D647-104F-091B-BF73529A0508}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario-based", "scenario-based", "{606D9446-7CC9-2BCC-0606-979B06418E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduResults", "datastructure-csharp-practice\scenario-based\EduResults\EduResults.csproj", "{A86DB3B1-A788-21D9-A975-1BC0747F1F4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelf.cs", "datastructure-csharp-practice\scenario-based\BookShelf.cs\BookShelf.cs.csproj", "{947761E7-B338-C182-E357-AE646B1183C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessApp.cs", "datastructure-csharp-practice\scenario-based\FitnessApp.cs\FitnessApp.cs.csproj", "{715C9046-731A-5B84-66B6-3754EF938BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParcelTracker", "datastructure-csharp-practice\scenario-based\ParcelTracker\ParcelTracker.csproj", "{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficManager.cs", "datastructure-csharp-practice\scenario-based\TrafficManager.cs\TrafficManager.cs.csproj", "{EEC9C8F2-7BB0-4218-6CBF-287951909D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamProctor", "datastructure-csharp-practice\scenario-based\ExamProctor\ExamProctor.csproj", "{41EF96BD-DC51-5EE2-6359-7A3D5955D653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AadharNumberFinder", "datastructure-csharp-practice\scenario-based\AadharNumberFinder\AadharNumberFinder.csproj", "{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashDealz.cs", "datastructure-csharp-practice\scenario-based\FlashDealz.cs\FlashDealz.cs.csproj", "{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerater", "datastructure-csharp-practice\scenario-based\PasswordGenerater\PasswordGenerater.csproj", "{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86DB3B1-A788-21D9-A975-1BC0747F1F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86DB3B1-A788-21D9-A975-1BC0747F1F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86DB3B1-A788-21D9-A975-1BC0747F1F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86DB3B1-A788-21D9-A975-1BC0747F1F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947761E7-B338-C182-E357-AE646B1183C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947761E7-B338-C182-E357-AE646B1183C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947761E7-B338-C182-E357-AE646B1183C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947761E7-B338-C182-E357-AE646B1183C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715C9046-731A-5B84-66B6-3754EF938BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715C9046-731A-5B84-66B6-3754EF938BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715C9046-731A-5B84-66B6-3754EF938BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715C9046-731A-5B84-66B6-3754EF938BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC9C8F2-7BB0-4218-6CBF-287951909D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC9C8F2-7BB0-4218-6CBF-287951909D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC9C8F2-7BB0-4218-6CBF-287951909D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC9C8F2-7BB0-4218-6CBF-287951909D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EF96BD-DC51-5EE2-6359-7A3D5955D653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EF96BD-DC51-5EE2-6359-7A3D5955D653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EF96BD-DC51-5EE2-6359-7A3D5955D653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EF96BD-DC51-5EE2-6359-7A3D5955D653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{606D9446-7CC9-2BCC-0606-979B06418E77} = {CFD794E8-D647-104F-091B-BF73529A0508}
+		{A86DB3B1-A788-21D9-A975-1BC0747F1F4F} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{947761E7-B338-C182-E357-AE646B1183C9} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{715C9046-731A-5B84-66B6-3754EF938BE1} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{7DEA6EF6-ACF1-BA01-A730-337B0E7398DF} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{EEC9C8F2-7BB0-4218-6CBF-287951909D82} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{41EF96BD-DC51-5EE2-6359-7A3D5955D653} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{DB8ADB23-DF1E-D0EE-3C46-A43602C1C32C} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{C9320A91-E8BA-4BFF-FEF8-76B1C0119A61} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+		{6DE8EE1D-C5D3-0811-F908-5C5C1FD18A2B} = {606D9446-7CC9-2BCC-0606-979B06418E77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DDE8B7A-AE86-4EC9-96E5-338D8F66632A}
+	EndGlobalSection
+EndGlobal
