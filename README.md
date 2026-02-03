@@ -1159,4 +1159,18 @@ Submission of JSON Data
 Reverse Linked List II
 📌Branch:datastructure-csharp-practice
 
+================================================================================================================================================================================================================================================================================
+
+
+### 📅 03 February 2026
+#### 🧩 Scenario 1: Flip Key
+Developed a string manipulation utility to help students understand ASCII values. The program removes characters with even ASCII codes from a word and reverses the remaining characters, demonstrating data transformation concepts used in encoding and security.
+#### 🤖 Scenario 2: Factory Robot Hazard Analyzer
+Built a system to evaluate the hazard risk score of a factory robot based on arm precision, worker density, and machinery state. The application validates inputs, calculates risk scores, and handles invalid cases using a custom exception.
+📌Branch:datastructure-csharp-practice
+
+#### 💻 LeetCode
+Divide Two Integers
+📌Branch:datastructure-csharp-practice
+
 
