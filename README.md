@@ -1173,4 +1173,24 @@ Built a system to evaluate the hazard risk score of a factory robot based on arm
 Divide Two Integers
 📌Branch:datastructure-csharp-practice
 
+================================================================================================================================================================================================================================================================================
+
+
+### 📅 04 February 2026
+
+### 1. SQL & Database Work
+Practiced Normalization (up to 3NF) and designed ER diagrams.
+Implemented DDL, DML, DCL operations on a sample database (student_records).
+Tested table creation, data insertion, updates, deletion, indexing, and window functions.
+📌Branch:dbms-csharp-practice
+
+### 2. Assignment
+Completed multi-threading assignment for payroll management.
+Implemented threaded employee insertion and update operations.
+📌Branch:multithreading-csharp-practice
+
+### 3. LeetCode Practice
+Solved: Longest Common Prefix problem.
+📌Branch:datastructure-csharp-practice
+
 
