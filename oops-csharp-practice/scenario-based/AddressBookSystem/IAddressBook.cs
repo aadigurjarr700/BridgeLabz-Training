@@ -25,5 +25,13 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         // count by state
         int GetCountByState(string state);
 
+        // UC-12: Ability to sort entries by City
+        void SortContactsByCity();
+
+        // UC-12: Ability to sort entries by State
+        void SortContactsByState();
+
+        // UC-12: Ability to sort entries by Zip
+        void SortContactsByZip();
     }
 }

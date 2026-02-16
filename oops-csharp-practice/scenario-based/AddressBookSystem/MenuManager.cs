@@ -21,7 +21,6 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
 
         // Displays the main menu and handles user interactions
-
         public static void DisplayMenu()
         {
             int choice;
@@ -34,7 +33,6 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("3. Search Person (City/State)");
                 Console.WriteLine("4. View Persons by City or State");
                 Console.WriteLine("5. Count Persons by City or State");
-
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter Choice: ");
 
@@ -45,21 +43,27 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                     case 1:
                         CreateNewAddressBook();
                         break;
+
                     case 2:
                         SelectAddressBook();
                         break;
+
                     case 3:
                         SearchAcrossAddressBooks();
                         break;
+
                     case 4:
                         ViewPersonsByCityOrState();
                         break;
+
                     case 5:
                         CountPersonsByCityOrState();
                         break;
+
                     case 0:
                         Console.WriteLine("Program Ended");
                         break;
+
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
@@ -67,6 +71,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
             } while (choice != 0);
         }
+
 
         private static void CreateNewAddressBook()
         {
@@ -138,16 +143,18 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("4. Add Multiple Contacts");
                 Console.WriteLine("5. Sort Contacts by Name");
+                Console.WriteLine("6. Sort Contacts by City");   // UC-12
+                Console.WriteLine("7. Sort Contacts by State");  // UC-12
+                Console.WriteLine("8. Sort Contacts by Zip");    // UC-12
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice: ");
 
-                choice = Convert.ToInt32(Console.ReadLine()); // Read user choice
+                choice = Convert.ToInt32(Console.ReadLine());
 
-                // Perform action based on user choice
                 switch (choice)
                 {
                     case 1:
-                        book.AddContact(); // Call method to add a contact
+                        book.AddContact();
                         break;
 
                     case 2:
@@ -157,6 +164,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                     case 3:
                         book.DeleteContact();
                         break;
+
                     case 4:
                         book.AddMultipleContactsMenu();
                         break;
@@ -165,17 +173,31 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         book.SortContactsByName();
                         break;
 
+                    case 6:
+                        book.SortContactsByCity();   // UC-12
+                        break;
+
+                    case 7:
+                        book.SortContactsByState();  // UC-12
+                        break;
+
+                    case 8:
+                        book.SortContactsByZip();    // UC-12
+                        break;
+
                     case 0:
                         break;
 
                     default:
-                       Console.WriteLine("Invalid Choice"); // Handle wrong input
+                        Console.WriteLine("Invalid Choice");
                         break;
                 }
 
-            } while (choice != 0); // Loop until user chooses to exit
+            } while (choice != 0);
 
         }
+
+
         //UC-8:Ability to search Person in a City or State across the multiple Addres search Result
         private static void SearchAcrossAddressBooks()
         {
@@ -194,6 +216,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                     addressBooks[i].SearchByState(value);
             }
         }
+
+
         //UC-9:Ability to view Persons by City or State
         private static void ViewPersonsByCityOrState()
         {
@@ -202,6 +226,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
             for (int i = 0; i < bookCount; i++)
             {
+                // This method must exist in AddressBookImpl
                 addressBooks[i].AddToCityStateMap(
                     cityNames, cityPersons, ref cityCount,
                     stateNames, statePersons, ref stateCount
@@ -224,7 +249,6 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                     Console.WriteLine($"{stateNames[i]} -> {statePersons[i]}");
             }
         }
-
 
 
         // UC-10: Ability to get number of contact persons by City or State
@@ -252,6 +276,5 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             else
                 Console.WriteLine($"Total Contacts in State '{value}' : {totalCount}");
         }
-
     }
 }

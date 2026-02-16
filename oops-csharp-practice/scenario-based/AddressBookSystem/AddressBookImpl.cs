@@ -1,26 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 {
     internal class AddressBookImpl : IAddressBook
     {
-
-
         private Contact[] contacts = new Contact[50];
         private int count = 0;
 
-        public string Name; // Name of this Address Book
+        public string Name;
 
         public AddressBookImpl(string name)
         {
             Name = name;
         }
 
-        //UC-2:Ability to add a new Contact to Address Book
+        // UC-2 Add Contact
         public void AddContact()
         {
             if (count >= contacts.Length)
@@ -32,83 +26,70 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Contact contact = new Contact();
 
             Console.Write("Enter First Name: ");
-            contact.FirstName = Console.ReadLine();
+            contact.FirstName = Console.ReadLine() ?? "";
 
             Console.Write("Enter Last Name: ");
-            contact.LastName = Console.ReadLine();
+            contact.LastName = Console.ReadLine() ?? "";
 
             // Duplicate check
             for (int i = 0; i < count; i++)
             {
-                if (contacts[i].Equals(contact))
+                if (contacts[i].FirstName == contact.FirstName &&
+                    contacts[i].LastName == contact.LastName)
                 {
-                    Console.WriteLine("Duplicate Contact Found. Cannot Add Same Person Again\n");
+                    Console.WriteLine("Duplicate Contact Found\n");
                     return;
                 }
             }
 
             Console.Write("Enter Address: ");
-            contact.Address = Console.ReadLine();
+            contact.Address = Console.ReadLine() ?? "";
 
             Console.Write("Enter City: ");
-            contact.City = Console.ReadLine();
+            contact.City = Console.ReadLine() ?? "";
 
             Console.Write("Enter State: ");
-            contact.State = Console.ReadLine();
+            contact.State = Console.ReadLine() ?? "";
 
             Console.Write("Enter Zip: ");
-            contact.Zip = Console.ReadLine();
+            contact.Zip = Console.ReadLine() ?? "";
 
             Console.Write("Enter Phone Number: ");
-            contact.PhoneNumber = Console.ReadLine();
+            contact.PhoneNumber = Console.ReadLine() ?? "";
 
             Console.Write("Enter Email: ");
-            contact.Email = Console.ReadLine();
+            contact.Email = Console.ReadLine() ?? "";
 
-            contacts[count] = contact;
-            count++;
+            contacts[count++] = contact;
 
             Console.WriteLine("Contact Added Successfully\n");
         }
-        //UC-3:Ability to add a new Contact to Address Book
+
+        // UC-3 Edit Contact
         public void EditContact()
         {
-            Console.Write("Enter First Name to Edit Contact: ");
-            string name = Console.ReadLine();
+            Console.Write("Enter First Name to Edit: ");
+            string name = Console.ReadLine() ?? "";
 
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].FirstName == name)
                 {
-                    Console.Write("Enter New Address: ");
-                    contacts[i].Address = Console.ReadLine();
-
                     Console.Write("Enter New City: ");
-                    contacts[i].City = Console.ReadLine();
-
-                    Console.Write("Enter New State: ");
-                    contacts[i].State = Console.ReadLine();
-
-                    Console.Write("Enter New Zip: ");
-                    contacts[i].Zip = Console.ReadLine();
-
-                    Console.Write("Enter New Phone Number: ");
-                    contacts[i].PhoneNumber = Console.ReadLine();
-
-                    Console.Write("Enter New Email: ");
-                    contacts[i].Email = Console.ReadLine();
-
-                    Console.WriteLine("\nContact Updated Successfully\n");
+                    contacts[i].City = Console.ReadLine() ?? "";
+                    Console.WriteLine("Contact Updated\n");
                     return;
                 }
             }
+
             Console.WriteLine("Contact Not Found\n");
         }
-        //UC-4:Ability to delete a person using person's name
+
+        // UC-4 Delete Contact
         public void DeleteContact()
         {
             Console.Write("Enter First Name to Delete: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? "";
 
             for (int i = 0; i < count; i++)
             {
@@ -117,10 +98,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                     for (int j = i; j < count - 1; j++)
                         contacts[j] = contacts[j + 1];
 
-                    contacts[count - 1] = null;
-                    count--;
-
-                    Console.WriteLine("Contact Deleted Successfully\n");
+                    contacts[--count] = null!;
+                    Console.WriteLine("Contact Deleted\n");
                     return;
                 }
             }
@@ -128,38 +107,23 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Console.WriteLine("Contact Not Found\n");
         }
 
-        //UC-5:Ability to add multiple person to Address Book
+        // UC-5 Add Multiple Contacts
         public void AddMultipleContactsMenu()
         {
             int choice;
-
             do
             {
-                Console.WriteLine("\n--- Add Multiple Contacts ---");
-                Console.WriteLine("1. Add New Contact");
+                Console.WriteLine("\n1. Add New Contact");
                 Console.WriteLine("0. Go Back");
-                Console.Write("Enter Choice: ");
-
                 choice = Convert.ToInt32(Console.ReadLine());
 
-                switch (choice)
-                {
-                    case 1:
-                        AddContact();
-                        break;
-
-                    case 0:
-                        break;
-
-                    default:
-                        Console.WriteLine("Invalid Choice");
-                        break;
-                }
+                if (choice == 1)
+                    AddContact();
 
             } while (choice != 0);
         }
 
-        // UC-8:Ability to search Person in a City or State across the multiple Addres search Result
+        // UC-8 Search By City
         public void SearchByCity(string city)
         {
             for (int i = 0; i < count; i++)
@@ -169,6 +133,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
+        // UC-8 Search By State
         public void SearchByState(string state)
         {
             for (int i = 0; i < count; i++)
@@ -178,113 +143,123 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
-
-
-        // UC-9:Ability to view Persons by City or State
+        // UC-9 Add To City-State Map
         public void AddToCityStateMap(
-            string[] cities, string[] cityPersons, ref int cityCount,
-            string[] states, string[] statePersons, ref int stateCount)
+            string[] cityNames, string[] cityPersons, ref int cityCount,
+            string[] stateNames, string[] statePersons, ref int stateCount)
         {
             for (int i = 0; i < count; i++)
             {
-                string fullName = contacts[i].FirstName + " " + contacts[i].LastName;
+                cityNames[cityCount] = contacts[i].City;
+                cityPersons[cityCount] = contacts[i].FirstName + " " + contacts[i].LastName;
+                cityCount++;
 
-                // CITY
-                int cityIndex = -1;
-                for (int c = 0; c < cityCount; c++)
-                {
-                    if (cities[c] == contacts[i].City)
-                    {
-                        cityIndex = c;
-                        break;
-                    }
-                }
-
-                if (cityIndex == -1)
-                {
-                    cities[cityCount] = contacts[i].City;
-                    cityPersons[cityCount] = fullName;
-                    cityCount++;
-                }
-                else
-                {
-                    cityPersons[cityIndex] += ", " + fullName;
-                }
-
-                // STATE
-                int stateIndex = -1;
-                for (int s = 0; s < stateCount; s++)
-                {
-                    if (states[s] == contacts[i].State)
-                    {
-                        stateIndex = s;
-                        break;
-                    }
-                }
-
-                if (stateIndex == -1)
-                {
-                    states[stateCount] = contacts[i].State;
-                    statePersons[stateCount] = fullName;
-                    stateCount++;
-                }
-                else
-                {
-                    statePersons[stateIndex] += ", " + fullName;
-                }
+                stateNames[stateCount] = contacts[i].State;
+                statePersons[stateCount] = contacts[i].FirstName + " " + contacts[i].LastName;
+                stateCount++;
             }
         }
 
-
-        // UC-10: Ability to get number of contact persons by City
+        // UC-10 Count By City
         public int GetCountByCity(string city)
         {
-            int cityCount = 0;
+            int total = 0;
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].City == city)
-                    cityCount++;
+                    total++;
             }
-            return cityCount;
+            return total;
         }
 
-        // UC-10: Ability to get number of contact persons by State
+        // UC-10 Count By State
         public int GetCountByState(string state)
         {
-            int stateCount = 0;
+            int total = 0;
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].State == state)
-                    stateCount++;
+                    total++;
             }
-            return stateCount;
+            return total;
         }
 
-
-        // UC-11: Ability to sort contacts alphabetically by First Name
+        // ===============================
+        // UC-12 Sort By Name
+        // ===============================
         public void SortContactsByName()
         {
             for (int i = 0; i < count - 1; i++)
             {
-                for (int j = i + 1; j < count; j++)
+                for (int j = 0; j < count - i - 1; j++)
                 {
-                    // Compare First Names
-                    if (string.Compare(contacts[i].FirstName, contacts[j].FirstName) > 0)
+                    if (string.Compare(contacts[j].FirstName, contacts[j + 1].FirstName) > 0)
                     {
-                        // Swap contacts
-                        Contact temp = contacts[i];
-                        contacts[i] = contacts[j];
-                        contacts[j] = temp;
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
                     }
                 }
             }
 
-            Console.WriteLine("\n--- Contacts Sorted Alphabetically ---");
-            for (int i = 0; i < count; i++)
-            {
-                Console.WriteLine(contacts[i].ToString());
-            }
+            Console.WriteLine("\nContacts Sorted By Name\n");
         }
 
+        // Sort By City
+        public void SortContactsByCity()
+        {
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].City, contacts[j + 1].City) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts Sorted By City\n");
+        }
+
+        // Sort By State
+        public void SortContactsByState()
+        {
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].State, contacts[j + 1].State) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts Sorted By State\n");
+        }
+
+        // Sort By Zip
+        public void SortContactsByZip()
+        {
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].Zip, contacts[j + 1].Zip) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts Sorted By Zip\n");
+        }
     }
 }
