@@ -1,37 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 {
-    // Interface for Address Book operations
+    // Interface defining all operations supported by an Address Book
     internal interface IAddressBook
     {
-        // Method to add a new contact
+        // Create operation
         void AddContact();
-        //method to edit contact
-        void EditContact();
-        //method to delete contact
-        void DeleteContact();
-        //method for add multiple contacts menu
-        void AddMultipleContactsMenu();
-        //method to serach by city
-        void SearchByCity(string city);
-        //method to search by state
-        void SearchByState(string state);
-        // count by city
-        int GetCountByCity(string city);
 
-        // count by state
+        // Update operation
+        void EditContact();
+
+        // Delete operation
+        void DeleteContact();
+
+        // Allows adding multiple contacts via menu
+        void AddMultipleContactsMenu();
+
+        // Search operations
+        void SearchByCity(string city);
+        void SearchByState(string state);
+
+        // Count operations
+        int GetCountByCity(string city);
         int GetCountByState(string state);
 
-        // UC-12: Ability to sort entries by City
+        // Sorting operations
+        void SortContactsByName();
         void SortContactsByCity();
-
-        // UC-12: Ability to sort entries by State
         void SortContactsByState();
-
-        // UC-12: Ability to sort entries by Zip
         void SortContactsByZip();
+
+        // Display all contacts in the address book
+        void DisplayAllContacts();
+
+        // Add entries into city and state dictionaries
+        void AddToCityStateDictionary(
+            Dictionary<string, List<string>> cityMap,
+            Dictionary<string, List<string>> stateMap
+        );
     }
 }

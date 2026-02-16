@@ -1,28 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 {
+    // Implements all address book functionalities
     internal class AddressBookImpl : IAddressBook
     {
-        private Contact[] contacts = new Contact[50];
-        private int count = 0;
+        // Using List collection instead of fixed-size array
+        private List<Contact> contacts = new List<Contact>();
 
-        public string Name;
+        // Name of this address book
+        public string Name { get; set; }
 
         public AddressBookImpl(string name)
         {
             Name = name;
         }
 
-        // UC-2 Add Contact
+        // Adds a new contact to the list
         public void AddContact()
         {
-            if (count >= contacts.Length)
-            {
-                Console.WriteLine("Address Book is Full\n");
-                return;
-            }
-
             Contact contact = new Contact();
 
             Console.Write("Enter First Name: ");
@@ -31,15 +29,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Console.Write("Enter Last Name: ");
             contact.LastName = Console.ReadLine() ?? "";
 
-            // Duplicate check
-            for (int i = 0; i < count; i++)
+            // Duplicate check using List.Contains (uses overridden Equals)
+            if (contacts.Contains(contact))
             {
-                if (contacts[i].FirstName == contact.FirstName &&
-                    contacts[i].LastName == contact.LastName)
-                {
-                    Console.WriteLine("Duplicate Contact Found\n");
-                    return;
-                }
+                Console.WriteLine("Duplicate contact found.\n");
+                return;
             }
 
             Console.Write("Enter Address: ");
@@ -60,54 +54,50 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Console.Write("Enter Email: ");
             contact.Email = Console.ReadLine() ?? "";
 
-            contacts[count++] = contact;
-
-            Console.WriteLine("Contact Added Successfully\n");
+            contacts.Add(contact);
+            Console.WriteLine("Contact added successfully.\n");
         }
 
-        // UC-3 Edit Contact
+        // Updates city for a given contact
         public void EditContact()
         {
             Console.Write("Enter First Name to Edit: ");
             string name = Console.ReadLine() ?? "";
 
-            for (int i = 0; i < count; i++)
-            {
-                if (contacts[i].FirstName == name)
-                {
-                    Console.Write("Enter New City: ");
-                    contacts[i].City = Console.ReadLine() ?? "";
-                    Console.WriteLine("Contact Updated\n");
-                    return;
-                }
-            }
+            var contact = contacts.FirstOrDefault(c => c.FirstName == name);
 
-            Console.WriteLine("Contact Not Found\n");
+            if (contact != null)
+            {
+                Console.Write("Enter New City: ");
+                contact.City = Console.ReadLine() ?? "";
+                Console.WriteLine("Contact updated.\n");
+            }
+            else
+            {
+                Console.WriteLine("Contact not found.\n");
+            }
         }
 
-        // UC-4 Delete Contact
+        // Removes contact using List.Remove
         public void DeleteContact()
         {
             Console.Write("Enter First Name to Delete: ");
             string name = Console.ReadLine() ?? "";
 
-            for (int i = 0; i < count; i++)
+            var contact = contacts.FirstOrDefault(c => c.FirstName == name);
+
+            if (contact != null)
             {
-                if (contacts[i].FirstName == name)
-                {
-                    for (int j = i; j < count - 1; j++)
-                        contacts[j] = contacts[j + 1];
-
-                    contacts[--count] = null!;
-                    Console.WriteLine("Contact Deleted\n");
-                    return;
-                }
+                contacts.Remove(contact);
+                Console.WriteLine("Contact deleted.\n");
             }
-
-            Console.WriteLine("Contact Not Found\n");
+            else
+            {
+                Console.WriteLine("Contact not found.\n");
+            }
         }
 
-        // UC-5 Add Multiple Contacts
+        // Allows adding multiple contacts
         public void AddMultipleContactsMenu()
         {
             int choice;
@@ -123,143 +113,85 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             } while (choice != 0);
         }
 
-        // UC-8 Search By City
+        // Searches contacts by city
         public void SearchByCity(string city)
         {
-            for (int i = 0; i < count; i++)
-            {
-                if (contacts[i].City == city)
-                    Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName} | {Name}");
-            }
+            var results = contacts.Where(c => c.City == city);
+
+            foreach (var contact in results)
+                Console.WriteLine($"{contact.FirstName} {contact.LastName} | {Name}");
         }
 
-        // UC-8 Search By State
+        // Searches contacts by state
         public void SearchByState(string state)
         {
-            for (int i = 0; i < count; i++)
-            {
-                if (contacts[i].State == state)
-                    Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName} | {Name}");
-            }
+            var results = contacts.Where(c => c.State == state);
+
+            foreach (var contact in results)
+                Console.WriteLine($"{contact.FirstName} {contact.LastName} | {Name}");
         }
 
-        // UC-9 Add To City-State Map
-        public void AddToCityStateMap(
-            string[] cityNames, string[] cityPersons, ref int cityCount,
-            string[] stateNames, string[] statePersons, ref int stateCount)
-        {
-            for (int i = 0; i < count; i++)
-            {
-                cityNames[cityCount] = contacts[i].City;
-                cityPersons[cityCount] = contacts[i].FirstName + " " + contacts[i].LastName;
-                cityCount++;
-
-                stateNames[stateCount] = contacts[i].State;
-                statePersons[stateCount] = contacts[i].FirstName + " " + contacts[i].LastName;
-                stateCount++;
-            }
-        }
-
-        // UC-10 Count By City
+        // Returns total contacts in a city
         public int GetCountByCity(string city)
         {
-            int total = 0;
-            for (int i = 0; i < count; i++)
-            {
-                if (contacts[i].City == city)
-                    total++;
-            }
-            return total;
+            return contacts.Count(c => c.City == city);
         }
 
-        // UC-10 Count By State
+        // Returns total contacts in a state
         public int GetCountByState(string state)
         {
-            int total = 0;
-            for (int i = 0; i < count; i++)
-            {
-                if (contacts[i].State == state)
-                    total++;
-            }
-            return total;
+            return contacts.Count(c => c.State == state);
         }
 
-        // ===============================
-        // UC-12 Sort By Name
-        // ===============================
+        // Sort using built-in List.Sort with lambda
         public void SortContactsByName()
         {
-            for (int i = 0; i < count - 1; i++)
-            {
-                for (int j = 0; j < count - i - 1; j++)
-                {
-                    if (string.Compare(contacts[j].FirstName, contacts[j + 1].FirstName) > 0)
-                    {
-                        Contact temp = contacts[j];
-                        contacts[j] = contacts[j + 1];
-                        contacts[j + 1] = temp;
-                    }
-                }
-            }
-
-            Console.WriteLine("\nContacts Sorted By Name\n");
+            contacts.Sort((a, b) => a.FirstName.CompareTo(b.FirstName));
+            Console.WriteLine("Sorted by Name.\n");
         }
 
-        // Sort By City
         public void SortContactsByCity()
         {
-            for (int i = 0; i < count - 1; i++)
-            {
-                for (int j = 0; j < count - i - 1; j++)
-                {
-                    if (string.Compare(contacts[j].City, contacts[j + 1].City) > 0)
-                    {
-                        Contact temp = contacts[j];
-                        contacts[j] = contacts[j + 1];
-                        contacts[j + 1] = temp;
-                    }
-                }
-            }
-
-            Console.WriteLine("\nContacts Sorted By City\n");
+            contacts.Sort((a, b) => a.City.CompareTo(b.City));
+            Console.WriteLine("Sorted by City.\n");
         }
 
-        // Sort By State
         public void SortContactsByState()
         {
-            for (int i = 0; i < count - 1; i++)
-            {
-                for (int j = 0; j < count - i - 1; j++)
-                {
-                    if (string.Compare(contacts[j].State, contacts[j + 1].State) > 0)
-                    {
-                        Contact temp = contacts[j];
-                        contacts[j] = contacts[j + 1];
-                        contacts[j + 1] = temp;
-                    }
-                }
-            }
-
-            Console.WriteLine("\nContacts Sorted By State\n");
+            contacts.Sort((a, b) => a.State.CompareTo(b.State));
+            Console.WriteLine("Sorted by State.\n");
         }
 
-        // Sort By Zip
         public void SortContactsByZip()
         {
-            for (int i = 0; i < count - 1; i++)
-            {
-                for (int j = 0; j < count - i - 1; j++)
-                {
-                    if (string.Compare(contacts[j].Zip, contacts[j + 1].Zip) > 0)
-                    {
-                        Contact temp = contacts[j];
-                        contacts[j] = contacts[j + 1];
-                        contacts[j + 1] = temp;
-                    }
-                }
-            }
+            contacts.Sort((a, b) => a.Zip.CompareTo(b.Zip));
+            Console.WriteLine("Sorted by Zip.\n");
+        }
 
-            Console.WriteLine("\nContacts Sorted By Zip\n");
+        // Displays all contacts in this book
+        public void DisplayAllContacts()
+        {
+            foreach (var contact in contacts)
+                Console.WriteLine(contact);
+        }
+
+        // Adds contacts to global dictionaries
+        public void AddToCityStateDictionary(
+            Dictionary<string, List<string>> cityMap,
+            Dictionary<string, List<string>> stateMap)
+        {
+            foreach (var contact in contacts)
+            {
+                if (!cityMap.ContainsKey(contact.City))
+                    cityMap[contact.City] = new List<string>();
+
+                cityMap[contact.City].Add(contact.FirstName + " " + contact.LastName);
+
+                if (!stateMap.ContainsKey(contact.State))
+                    stateMap[contact.State] = new List<string>();
+
+                stateMap[contact.State].Add(contact.FirstName + " " + contact.LastName);
+            }
         }
     }
 }
