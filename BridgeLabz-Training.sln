@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multithreading-csharp-practice", "multithreading-csharp-practice", "{20737362-CA0A-4431-45EB-E16E525FF81B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario-based", "scenario-based", "{C25DDF5B-8FD1-243D-63F1-E50C58E8F885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "College-Admission-Portal", "multithreading-csharp-practice\scenario-based\College-Admission-Portal\College-Admission-Portal.csproj", "{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookSystem", "multithreading-csharp-practice\scenario-based\AddressBookSystem\AddressBookSystem.csproj", "{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{3FB08151-F04B-BF86-A0E8-A466AE94A6AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-multithreading", "csharp-multithreading", "{9D1A426C-7754-17AE-9CA4-B1E006CE10B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "payroll-management", "multithreading-csharp-practice\gcr-codebase\csharp-multithreading\payroll-management\payroll-management.csproj", "{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C25DDF5B-8FD1-243D-63F1-E50C58E8F885} = {20737362-CA0A-4431-45EB-E16E525FF81B}
+		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91} = {C25DDF5B-8FD1-243D-63F1-E50C58E8F885}
+		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745} = {C25DDF5B-8FD1-243D-63F1-E50C58E8F885}
+		{3FB08151-F04B-BF86-A0E8-A466AE94A6AD} = {20737362-CA0A-4431-45EB-E16E525FF81B}
+		{9D1A426C-7754-17AE-9CA4-B1E006CE10B1} = {3FB08151-F04B-BF86-A0E8-A466AE94A6AD}
+		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135} = {9D1A426C-7754-17AE-9CA4-B1E006CE10B1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D9EC957-AC46-477F-BCC4-5F0CE5B4CB5A}
+	EndGlobalSection
+EndGlobal
