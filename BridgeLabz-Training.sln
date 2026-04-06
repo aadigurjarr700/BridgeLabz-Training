@@ -2,6 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multithreading-csharp-practice", "multithreading-csharp-practice", "{20737362-CA0A-4431-45EB-E16E525FF81B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario-based", "scenario-based", "{C25DDF5B-8FD1-243D-63F1-E50C58E8F885}"
@@ -15,6 +16,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp-multithreading", "csharp-multithreading", "{9D1A426C-7754-17AE-9CA4-B1E006CE10B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "payroll-management", "multithreading-csharp-practice\gcr-codebase\csharp-multithreading\payroll-management\payroll-management.csproj", "{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}"
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core-csharp-practice", "core-csharp-practice", "{016F927A-BB75-AA9E-A53E-92BB7EA9120C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gcr-codebase", "gcr-codebase", "{E2F7AEDA-5A72-4B22-63FA-70A6A9CAB285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programming-elements", "core-csharp-practice\gcr-codebase\programming-elements\programming-elements.csproj", "{A36820B8-2FEA-C036-4E96-D7563A566CA5}"
+>>>>>>> core-csharp-practice
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +30,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,11 +43,18 @@ Global
 		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C3BC5A5-88A9-F7BD-01A5-7F9D01754135}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{A36820B8-2FEA-C036-4E96-D7563A566CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36820B8-2FEA-C036-4E96-D7563A566CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36820B8-2FEA-C036-4E96-D7563A566CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36820B8-2FEA-C036-4E96-D7563A566CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> core-csharp-practice
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+<<<<<<< HEAD
 		{C25DDF5B-8FD1-243D-63F1-E50C58E8F885} = {20737362-CA0A-4431-45EB-E16E525FF81B}
 		{0E91045F-8D0E-35C5-CB4A-F2D9603CBD91} = {C25DDF5B-8FD1-243D-63F1-E50C58E8F885}
 		{ACF5FAE0-C28C-A43C-DFA8-BF7E01C9B745} = {C25DDF5B-8FD1-243D-63F1-E50C58E8F885}
@@ -48,5 +64,12 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9EC957-AC46-477F-BCC4-5F0CE5B4CB5A}
+=======
+		{E2F7AEDA-5A72-4B22-63FA-70A6A9CAB285} = {016F927A-BB75-AA9E-A53E-92BB7EA9120C}
+		{A36820B8-2FEA-C036-4E96-D7563A566CA5} = {E2F7AEDA-5A72-4B22-63FA-70A6A9CAB285}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9366787-8676-4A10-8998-9FFF9EB4F6F5}
+>>>>>>> core-csharp-practice
 	EndGlobalSection
 EndGlobal
